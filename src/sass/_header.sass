@@ -5,6 +5,8 @@
     padding: 5rem 5rem 5rem 6rem
     grid-template-rows: 1fr min-content minmax(10rem, min-content) 1fr
     background: url(../img/header-bg.png) center / cover no-repeat
+    @include respond(tab-port)
+        grid-column: full-start / full-end
     &__btn
         align-self: start
         justify-self: start
